@@ -1,0 +1,49 @@
+<!-- Both em and rem are flexible, scalable units which are translated by the browser into pixel values, depending on the font size settings in your design. If you use a value of 1em or 1rem, it could translate in the browser as anything from 16px to 160px or any other value. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Size units em rem vh vw</title>
+    <!-- 1em - equal to parent element font size 
+    1rem - equal to root element font size which is by default 16px
+    vh - view height equal to the browser's page height if it's 100vh 
+    vw - view width equal to the browser's page width if it's 100vw
+    -->
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            width:400px;
+            /* height: 344px; */
+            height: 100vh;
+            width: 100vw;
+            font-size: 10px;
+            border :2px solid red;
+        }
+    h1{
+        text-align: center;
+    }
+    #first{
+        /* font-size: 3em;
+        padding: 3em; */
+
+    }
+    #second{
+        /* font-size: 3rem;
+        padding: 3rem; */
+
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+</html>v

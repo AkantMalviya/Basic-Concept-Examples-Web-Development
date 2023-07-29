@@ -1,0 +1,157 @@
+<!-- HTML Basics List ul ol li tables inputs headings lables buttons Inline and block elements, HTML entities and semantic elements  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://source.unsplash.com/600x300/?nature,water" alt="remote image"></img>
+    
+    <ul type="circle">
+        <li>This is first item of my unordered list</li>
+        <li>This is second item of my unordered list</li>
+        <ul>
+            <li>Another one</li>
+            <li>Another two</li>
+            <li>Another three</li>
+        </ul>
+        <li>This is third item of my unordered list</li>
+    </ul>
+    <ol type="a">
+        <li>This is first item of my ordered list</li>
+        <li>This is second item of my ordered list</li>
+        <li>This is third item of my ordered list</li>
+    </ol>
+
+    <!-- Tables -->
+    <h3>HTML Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Employee Id</th>
+                <th>Employee Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Harry </td>
+                <td> 34343 </td>
+                <td> Programmer </td>
+            </tr>
+            <tr>
+                <td> Rohan Das</td>
+                <td> 3483 </td>
+                <td> HTML Expert </td>
+            </tr>
+            <tr>
+                <td> Shubham </td>
+                <td> 7564 </td>
+                <td> Android Developer </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>This is HTML forms tutorial</h2>
+    <form action="backend.py">
+        <label for="name"> Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligibility" checked>
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+        </div>
+
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea>
+        </div>
+
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf" selected>Swift</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+    <h3>Inline and Block Elements</h3>
+    <strong style="border: 2px solid red;">this is a paragraph</strong> <a style="border: 2px solid blue;">
+        this is also a paragraph</a>
+    <span style="border: 2px solid red;">this is a span</span> <span style="border: 2px solid red;">this is also a span</span>
+    <h3>Ids and classes tutorial</h3>
+    <div id="mainBox" class="redBg blackBorder">
+        this is mainbox
+    </div>
+    <span class="redBg"></span>
+    <!-- Select and press ctrl + / to comment -->
+    <!-- Emmet -->
+    <!-- . is for class and # is for id -->
+    <span class="redBg"></span>
+    <span id="mainSpan"></span>
+    <div class="redBg blackBorder anotherClass"></div>
+
+    <!-- Emmet takes div tag as default -->
+    <div class="blackBackground"></div>
+
+    <!-- Creating multiple elements using Emmet -->
+    <!-- span.myClass.myClass2.myClass3*4 + <Tab> to print 4 similar elements using Emmet -->
+    <span class="myClass myClass2 myClass3">First</span>
+    <span class="myClass myClass2 myClass3">Second</span>
+    <span class="myClass myClass2 myClass3">Third</span>
+    <span class="myClass myClass2 myClass3">Fourth</span>
+
+    <div class="container">
+        <p>HTML Entities</p>
+    </div>
+    <div class="container">
+        <p>This is another     paragraph with two spaces</p>
+        <p>Paragraph is written like this <p> </p>
+        <p>Pound is written like this £ </p>
+        <p>Copyright is written like this © </p>
+        <p>Another character is  ⇛ </p>
+        <p>Another character is  ¼ </p>
+        <p>Empty character is written like this ​ </p>
+    </div>
+    <h3>Semantic elements</h3>
+    <header> This is Header</header>
+    <nav>This is Navigation</nav>
+    <section>This is Section</section>
+    <details>This is Detail</details>
+    <article>This is Article</article>
+    <aside>This is Aside</aside>
+    <footer>This is Footer</footer>
+    <!-- This is a comment -->
+</body>
+</html>
